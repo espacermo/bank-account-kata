@@ -16,6 +16,6 @@ public class OperationServiceImpl implements OperationService {
 
 	@Override
 	public List<Operation> getOperationsByAccount(String accountNumber) {
-		return null;
+		return operationRepository.findOperationsByAccountNumber(accountNumber);
 	}
 }
