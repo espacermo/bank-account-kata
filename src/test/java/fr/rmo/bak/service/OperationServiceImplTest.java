@@ -7,28 +7,23 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import fr.rmo.bak.repository.AccountRepository;
+import fr.rmo.bak.repository.OperationRepository;
 
 /**
- * Test class for Account Service
+ * Test class for Operation Service
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AccountServiceImplTest {
+public class OperationServiceImplTest {
 
 	@Autowired
-	private AccountService accountService;
+	private OperationService operationService;
 
 	@MockBean
-	private AccountRepository accountRepository;
+	private OperationRepository operationRepository;
 
 	@Test
-	public void whenDepositThenAmountUpdated() {
-
-	}
-
-	@Test
-	public void whenWithdrawThenAmountUpdated() {
+	public void whenOperationsByAccountThenOk() {
 
 	}
 }
