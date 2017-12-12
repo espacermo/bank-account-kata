@@ -1,5 +1,7 @@
 package fr.rmo.bak.service;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +18,18 @@ public class AccountServiceImpl implements AccountService {
 
 	@Transactional
 	@Override
-	public Account test() {
-		// Return nothing, just to test
-		return accountRepository.findOne(1L);
+	public Account deposit(String accountNumber, Long amount) {
+		return null;
 	}
 
+	@Transactional
+	@Override
+	public Account withdraw(String accountNumber, Long amount) {
+		return null;
+	}
+
+	@Override
+	public List<Account> getAccountHistory() {
+		return null;
+	}
 }
