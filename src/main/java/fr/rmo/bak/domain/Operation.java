@@ -27,6 +27,18 @@ public class Operation {
 	@Column(nullable = false)
 	private OperationType operationType;
 
+	// no-arg constructor.
+	public Operation() {
+	}
+
+	// Create Operation with current date
+	public Operation(Account account, Long amount, OperationType operationType) {
+		this.account = account;
+		this.amount = amount;
+		this.date = new Date();
+		this.operationType = operationType;
+	}
+
 	public Long getId() {
 		return id;
 	}
