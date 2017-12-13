@@ -18,6 +18,9 @@ import fr.rmo.bak.domain.Operation;
 import fr.rmo.bak.service.AccountService;
 import fr.rmo.bak.service.OperationService;
 
+/**
+ * Rest API for Account management
+ */
 @RestController
 @RequestMapping("/api/accounts")
 public class AccountController {
@@ -47,7 +50,7 @@ public class AccountController {
 	 *            Number of the account
 	 * @param amount
 	 *            amount of money
-	 * @return updated account
+	 * @return Updated account
 	 */
 	@PutMapping("/{accountNumber}/operations/deposit")
 	public Account deposit(@PathVariable String accountNumber, @Valid @RequestBody AmountBean amount) {
@@ -61,7 +64,7 @@ public class AccountController {
 	 *            Number of the account
 	 * @param amount
 	 *            amount of money
-	 * @return updated account
+	 * @return Updated account
 	 */
 	@PutMapping("/{accountNumber}/operations/withdraw")
 	public Account withdraw(@PathVariable String accountNumber, @Valid @RequestBody AmountBean amount) {
