@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 
 public class AmountBean {
 
-	// Consider an operation with a value equals to 0 non
+	// Consider an operation with a value equals to 0 impossible
 	@Min(value = 1)
 	@NotNull
 	private Long value;
