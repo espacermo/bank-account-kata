@@ -8,6 +8,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+/**
+ * Represents the list of Operation of a given Account
+ */
 @Entity
 public class Operation {
 
