@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bank Account Client</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
+	<script	src="assets/vendors/jquery/jquery.min.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.min.js"></script>
+	<script src="assets/js/bak-app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="alert alert-danger">
+  			<span id="errorMessage"></span>
+		</div>
+
+		<h2>Account&nbsp;<span id="accountInfo"></span></h2>
+
+		<div class="form-inline">
+			<div class="form-group">
+				<label class="sr-only" for="amount">Amount</label>
+				<input type="text" class="form-control" id="amountInput" placeholder="Amount">
+			</div>
+			<button type="button" class="btn btn-success" id="depositButton">Deposit</button>
+			<button type="button" class="btn btn-warning" id="withdrawButton">Withdraw</button>
+		</div>
+
+		<table class="table table-striped" id="operationTable">
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Amount</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+  		<tbody>
+  			<tr id="table-template">
+  				<td class="date"></td>
+        		<td class="amount"></td>
+        		<td class="operationType"></td>
+  			</tr>
+  		</tbody>
+		</table>
+	</div>
+</body>
+</html>
